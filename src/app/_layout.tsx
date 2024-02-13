@@ -18,12 +18,14 @@ export default function Layout() {
         Inter_700Bold,
     })
 
-    if(!fontsLoaded) {
+    if (!fontsLoaded) {
         return <Loading />
     }
 
     return (
-        <SafeAreaView className="flex-1 bg-slate-900">
+        <SafeAreaView
+            className="flex-1 bg-slate-900"
+        >
             <Slot />
         </SafeAreaView>
     )
